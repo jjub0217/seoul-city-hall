@@ -1247,7 +1247,10 @@ button {
   position: relative;
   padding-bottom: 30px;
 }
-.notice-slide .content .swiper .swiper-wrapper {
+.notice-slide .content .swiper {
+  padding-bottom: 40px;
+}
+.notice-slide .content .swiper-wrapper {
   display: flex;
   align-items: center;
 }
@@ -1260,17 +1263,17 @@ button {
   right: 0;
   z-index: 1;
 }
-.notice-slide .content .control-area .notice-pagination {
+.notice-slide .content .control-area .pagination {
   width: 40px;
   display: flex;
   align-items: center;
   color: #222;
 }
-.notice-slide .content .control-area .notice-pagination span {
+.notice-slide .content .control-area .pagination span {
   font-size: 14px;
   font-weight: 300;
 }
-.notice-slide .content .control-area .notice-pagination::after {
+.notice-slide .content .control-area .pagination::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -1311,31 +1314,54 @@ button {
   border-left: none;
 }
 
-.organizations .organization-list {
+.section-related .related-list {
   display: flex;
   align-items: center;
-  border-top: 1px solid #d0d0d0;
-  border-right: 1px solid #d0d0d0;
-  border-bottom: 1px solid #d0d0d0;
+  border: 1px solid #d0d0d0;
+  position: relative;
 }
-.organizations .organization-list .organization-item {
+.section-related .related-item {
   flex: 1;
-  width: 230px;
   font-size: 14px;
   text-align: center;
-  padding: 20px 0;
-  border-left: 1px solid #d0d0d0;
   background: #f7f7f7;
 }
-.organizations .organization-list .organization-item .organization-btn {
-  color: #333;
+.section-related .related-item + .related-item {
+  border-left: 1px solid #d0d0d0;
 }
-.organizations .organization-list .organization-item .organization-btn .organization {
-  display: inline-block;
+.section-related .related-item .sub-area {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+.section-related .related-item .sub-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: left;
+  gap: 10px 0;
+  line-height: 19px;
+}
+.section-related .related-item .sub-item {
+  width: 25%;
+}
+.section-related .related-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+.section-related .related-btn span {
   position: relative;
   padding-right: 20px;
 }
-.organizations .organization-list .organization-item .organization-btn .organization::after {
+.section-related .related-btn span::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -1349,12 +1375,7 @@ button {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform-origin: center center;
 }
-.organizations .organization-list .organization-item .organization-btn .organization.on {
-  display: inline-block;
-  position: relative;
-  padding-right: 20px;
-}
-.organizations .organization-list .organization-item .organization-btn .organization.on::after {
+.section-related .related-btn.on span::after {
   top: 4px;
   transform: rotate(45deg);
 }
