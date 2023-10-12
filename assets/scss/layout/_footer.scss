@@ -1,0 +1,159 @@
+.footer {
+  padding-top: 35px;
+
+  .noori-link {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+
+    .noori-list {
+      display: flex;
+
+
+      .noori-item {
+
+        a {
+          font-size: 12px;
+          color: #636363;
+          font-weight: 300;
+          display: flex;
+          align-items: center;
+
+
+        }
+
+        &:not(:last-child) {
+          a::after {
+            content: "";
+            display: inline-block;
+            background-color: #dcdcdc;
+            width: 1px;
+            height: 12px;
+            margin: 0px 10px;
+          }
+        }
+
+        .private-info {
+          font-weight: 500;
+          color: #222;
+        }
+      }
+    }
+
+    .sns-list {
+      display: flex;
+      gap: 10px;
+
+      .sns-item {
+        width: 24px;
+        height: 24px;
+
+        &.facebook {
+          background: url("../images/icon_set_sns.png") no-repeat -25px 0;
+          cursor: pointer;
+        }
+
+        &.twiter {
+          background: url("../images/icon_set_sns.png") no-repeat -50px 0;
+          cursor: pointer;
+        }
+
+        &.instagram {
+          background: url("../images/icon_set_sns.png") no-repeat -75px 0;
+          cursor: pointer;
+        }
+
+        &.kakaostory {
+          background: url("../images/icon_set_sns.png") no-repeat -100px 0;
+          cursor: pointer;
+        }
+
+        &.youtube {
+          background: url("../images/icon_set_sns.png") no-repeat -125px 0;
+          cursor: pointer;
+        }
+
+        &.blog {
+          background: url("../images/icon_set_sns.png") no-repeat -150px 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+  .address-info {
+    display: flex;
+    padding: 22px 0;
+
+    .tel_120 {
+      width: 110px;
+
+      p {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+
+      p:first-child {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        // background: #0f0;
+      }
+
+      .tel_icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url("../images/icon_set_common.png") no-repeat -221px -1px;
+          margin-left: 20px;
+        }
+
+        .num {
+          font-size: 24px;
+          font-weight: 600;
+          margin-left: 2px;
+        }
+
+      }
+
+    }
+
+    .address {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+      color: #636363;
+    }
+
+    p,
+    small {
+      font-size: 12px;
+      color: #636363;
+      font-weight: 300;
+      letter-spacing: -1px;
+      line-height: 17px;
+    }
+
+    .mark-area {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+  }
+
+}
