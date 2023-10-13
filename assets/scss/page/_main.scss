@@ -1202,12 +1202,11 @@
   }
 }
 
-.notice-slide {
+.section-notice {
   padding: 50px 0;
 
   .content {
     position: relative;
-    padding-bottom: 30px;
 
     .swiper {
       padding-bottom: 40px;
@@ -1299,7 +1298,6 @@
     &-list {
       display: flex;
       align-items: center;
-      border: 1px solid #d0d0d0;
       position: relative;
     }
 
@@ -1308,9 +1306,13 @@
       font-size: 14px;
       text-align: center;
       background: #f7f7f7;
+      border-top: 1px solid #d0d0d0;
+      border-left: 1px solid #d0d0d0;
+      border-bottom: 1px solid #d0d0d0;
+
 
       &+.related-item {
-        border-left: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
       }
 
       .sub {
@@ -1321,12 +1323,14 @@
           bottom: 100%;
           left: 0;
           z-index: 1;
+          background: #fff;
+          border: 1px solid #d0d0d0;
+          padding: 20px;
         }
 
         &-list {
           display: flex;
           flex-wrap: wrap;
-          padding: 20px;
           text-align: left;
           // row 만 적용이 된것이다.
           gap: 10px 0;

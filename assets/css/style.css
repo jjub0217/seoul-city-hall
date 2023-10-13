@@ -1326,24 +1326,23 @@ button {
   background-position: -200px 0px;
 }
 
-.notice-slide {
+.section-notice {
   padding: 50px 0;
 }
-.notice-slide .content {
+.section-notice .content {
   position: relative;
-  padding-bottom: 30px;
 }
-.notice-slide .content .swiper {
+.section-notice .content .swiper {
   padding-bottom: 40px;
 }
-.notice-slide .content .swiper-wrapper {
+.section-notice .content .swiper-wrapper {
   display: flex;
   align-items: center;
 }
-.notice-slide .content .swiper-wrapper .swiper-slide img {
+.section-notice .content .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
-.notice-slide .content .control-area {
+.section-notice .content .control-area {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1352,17 +1351,17 @@ button {
   right: 0;
   z-index: 1;
 }
-.notice-slide .content .control-area .pagination {
+.section-notice .content .control-area .pagination {
   width: 40px;
   display: flex;
   align-items: center;
   color: #222;
 }
-.notice-slide .content .control-area .pagination span {
+.section-notice .content .control-area .pagination span {
   font-size: 14px;
   font-weight: 300;
 }
-.notice-slide .content .control-area .pagination::after {
+.section-notice .content .control-area .pagination::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -1370,7 +1369,7 @@ button {
   background: rgba(255, 255, 255, 0.5);
   margin-left: 10px;
 }
-.notice-slide .content .control-area .btn-prev {
+.section-notice .content .control-area .btn-prev {
   background: url("../images/icon_set_common2.png") no-repeat -45px -43px;
   width: 20px;
   height: 20px;
@@ -1378,7 +1377,7 @@ button {
   border-left: 1px solid #999;
   border: 1px solid #999;
 }
-.notice-slide .content .control-area .notice-btn-autoplay {
+.section-notice .content .control-area .notice-btn-autoplay {
   background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
   width: 20px;
   height: 20px;
@@ -1386,7 +1385,7 @@ button {
   border: 1px solid #999;
   border-left: none;
 }
-.notice-slide .content .control-area .pause {
+.section-notice .content .control-area .pause {
   width: 20px;
   height: 20px;
   background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
@@ -1394,7 +1393,7 @@ button {
   border: 1px solid #999;
   border-left: none;
 }
-.notice-slide .content .control-area .btn-next {
+.section-notice .content .control-area .btn-next {
   background: url("../images/icon_set_common2.png") no-repeat -85px -43px;
   width: 20px;
   height: 20px;
@@ -1406,7 +1405,6 @@ button {
 .section-related .related-list {
   display: flex;
   align-items: center;
-  border: 1px solid #d0d0d0;
   position: relative;
 }
 .section-related .related-item {
@@ -1414,9 +1412,12 @@ button {
   font-size: 14px;
   text-align: center;
   background: #f7f7f7;
+  border-top: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
 }
 .section-related .related-item + .related-item {
-  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
 }
 .section-related .related-item .sub-area {
   display: none;
@@ -1425,11 +1426,13 @@ button {
   bottom: 100%;
   left: 0;
   z-index: 1;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  padding: 20px;
 }
 .section-related .related-item .sub-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
   text-align: left;
   gap: 10px 0;
   line-height: 19px;

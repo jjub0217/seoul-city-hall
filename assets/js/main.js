@@ -191,7 +191,7 @@ $(function () {
    * @swiper기능
    * 
    */
-  const bottomSlide =  new Swiper('.notice-slide .swiper',{
+  const bottomSlide =  new Swiper('.section-notice .swiper',{
     slidesPerView: 3,
     spaceBetween: 43,
     autoplay:{
