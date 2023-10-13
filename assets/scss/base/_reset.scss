@@ -108,6 +108,13 @@ body {
   font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
 ol,
 ul {
   list-style: none;
