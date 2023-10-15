@@ -184,7 +184,7 @@ $(function () {
     $(this).find("label").toggleClass("checked")
   })
   $(".popup-close-btn").click(function(){
-    $(".popup-box").addClass("no")
+    $(".popup").addClass("no")
   })
 
   /**

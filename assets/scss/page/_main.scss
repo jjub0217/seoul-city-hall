@@ -1,4 +1,4 @@
-.popup-box {
+.popup {
   display: flex;
   justify-content: center;
   position: relative;
@@ -17,48 +17,37 @@
     height: 100%;
   }
 
-  .popup {
+  &-box {
     position: relative;
-  }
 
-  .image-box {
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .popup-close {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    right: 50%;
-    bottom: 5px;
-    z-index: 1;
-    margin-right: -576px;
-    width: 150px;
-    padding: 5px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-
-
-    label {
-      color: #fff;
-      font-size: 12px;
-      display: flex;
-      gap: 4px;
-
-      &::before {
-        content: "";
-        display: block;
-        background-color: #fff;
-        border: 1px solid #dddddd;
-        width: 10px;
-        height: 10px;
+    .image-box {
+      img {
+        width: 100%;
+        object-fit: cover;
       }
+    }
 
-      &.checked {
+    .popup-close {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      right: 50%;
+      bottom: 5px;
+      z-index: 1;
+      margin-right: -576px;
+      width: 150px;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+
+
+      label {
+        color: #fff;
+        font-size: 12px;
+        display: flex;
+        gap: 4px;
+
         &::before {
           content: "";
           display: block;
@@ -66,21 +55,34 @@
           border: 1px solid #dddddd;
           width: 10px;
           height: 10px;
-          background: #fff url("../images/icon_input_checked_m.png") no-repeat 50% 50%;
-          background-size: 10px auto;
+        }
+
+        &.checked {
+          &::before {
+            content: "";
+            display: block;
+            background-color: #fff;
+            border: 1px solid #dddddd;
+            width: 10px;
+            height: 10px;
+            background: #fff url("../images/icon_input_checked_m.png") no-repeat 50% 50%;
+            background-size: 10px auto;
+          }
         }
       }
-    }
 
-    .popup-close-btn {
-      width: 24px;
-      height: 24px;
-      background: url("../images/btn_allmenu_close.png") no-repeat center center;
-      background-size: 50% auto;
-      cursor: pointer;
-    }
+      .popup-close-btn {
+        width: 24px;
+        height: 24px;
+        background: url("../images/btn_allmenu_close.png") no-repeat center center;
+        background-size: 50% auto;
+        cursor: pointer;
+      }
 
+    }
   }
+
+
 }
 
 
@@ -1116,86 +1118,86 @@
     }
   }
 
-  .sns-area {
-    background-image: url("../images/sns-bg.gif");
-    background-repeat: no-repeat;
-    width: 350px;
-    height: 195px;
+  .sns {
+    &-area {
+      background-image: url("../images/sns-bg.gif");
+      background-repeat: no-repeat;
+      width: 350px;
+      height: 195px;
 
-    .headline {
-      padding: 13px 10px;
-      font-size: 22px;
+      .headline {
+        padding: 13px 10px;
+        font-size: 22px;
+      }
     }
 
-    .sns {
-      &-list {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transform: translateY(80%);
+    }
+
+    &-item {
+      a {
         display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 5px;
-        transform: translateY(80%);
+        align-items: center;
+        flex-direction: column;
+
+        &::before {
+          content: "";
+          width: 40px;
+          height: 40px;
+        }
       }
 
-      &-item {
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-          &::before {
-            content: "";
-            width: 40px;
-            height: 40px;
-          }
+      &.instagram {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
         }
+      }
 
-        &.instagram {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: 0px 0px;
-          }
+      &.facebook {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: -40px 0px;
         }
+      }
 
-        &.facebook {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: -40px 0px;
-          }
+      &.twiter {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: -80px 0px;
         }
+      }
 
-        &.twiter {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: -80px 0px;
-          }
+      &.blog {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: -120px 0px;
         }
+      }
 
-        &.blog {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: -120px 0px;
-          }
+      &.youtube {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: -160px 0px;
         }
+      }
 
-        &.youtube {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: -160px 0px;
-          }
-        }
-
-        &.kakaostory {
-          a::before {
-            background: url("../images/ico_sns_list.png");
-            background-repeat: no-repeat;
-            background-position: -200px 0px;
-          }
+      &.kakaostory {
+        a::before {
+          background: url("../images/ico_sns_list.png");
+          background-repeat: no-repeat;
+          background-position: -200px 0px;
         }
       }
     }
