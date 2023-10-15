@@ -29,7 +29,9 @@
   <!-- 최소 너비 보장해주는 wrapper -->
   <div class="wrapper">
     <div class="popup-box">
-      <a href="https://festival.seoul.go.kr/garden" class="link-popup"></a>
+      <a href="https://festival.seoul.go.kr/garden" class="link-popup">
+        <span class="blind">서울정원박람회</span>
+      </a>
       <div class="popup">
         <div class="image-box">
           <img src="./assets/images/SSTORY_20231006160933_25590.jpg" alt="">
@@ -52,13 +54,13 @@
           </h1>
           <nav class="gnb">
             <ul class="nav-list">
-              <li class="nav-item"><a href="#" class="nav">서울소식</a></li>
-              <li class="nav-item"><a href="#" class="nav">시민참여</a></li>
-              <li class="nav-item"><a href="#" class="nav">분야별정보</a></li>
-              <li class="nav-item"><a href="#" class="nav">서울소개</a></li>
-              <li class="nav-item"><a href="#" class="nav">부서안내</a></li>
-              <li class="nav-item"><a href="#" class="nav">정보공개</a></li>
-              <li class="nav-item"><a href="#" class="nav">응답소</a></li>
+              <li class="nav-item"><a href="" class="nav">서울소식</a></li>
+              <li class="nav-item"><a href="" class="nav">시민참여</a></li>
+              <li class="nav-item"><a href="" class="nav">분야별정보</a></li>
+              <li class="nav-item"><a href="" class="nav">서울소개</a></li>
+              <li class="nav-item"><a href="" class="nav">부서안내</a></li>
+              <li class="nav-item"><a href="" class="nav">정보공개</a></li>
+              <li class="nav-item"><a href="" class="nav">응답소</a></li>
             </ul>
           </nav>
           <div class="auth-area">
@@ -74,6 +76,7 @@
       <div class="inner">
 
         <div class="language-area">
+          <label for="langList" class="blind">언어선택</label>
           <select class="global-language" id="langList">
             <option value="https://www.naver.com" selected>ENGLISH</option>
             <option value="https://www.naver.com">日本語</option>
@@ -83,7 +86,7 @@
           </select>
           <button class="select-lang-btn">GO</button>
         </div>
-        <!-- -------------------------------------------- -->
+        <!------------------------------------------------>
         <section class="section-search_weather">
           <h2 class="blind">검색 및 기상</h2>
 
@@ -95,7 +98,8 @@
             <form action="" method="post">
               <fieldset>
                 <legend class="blind">검색 폼</legend>
-                <input type="text" class="search-input" placeholder="검색어를 입력해 주세요">
+                <label for="search" class="blind">검색어입력</label>
+                <input type="text" class="search-input" placeholder="검색어를 입력해 주세요" id="search">
                 <div class="search-btn-area">
                   <button class="keyboard-btn" aria-label="키보드를마우스로클릭">
                   </button>
@@ -112,7 +116,7 @@
           </div>
 
         </section>
-        <!-- -------------------------------------------- -->
+        <!------------------------------------------------>
         <div class="grid-area">
 
           <section class="section-issue">
@@ -128,8 +132,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide1.jpg"
-                        alt="2023년 서울시 중장년 소상공인 디지털 전환 지원사업">
+                      <img src="./assets/images/slide1.jpg" alt>
                     </div>
                     <p class="text-box">2023년 하반기 서울시 중장년 소상공인 디지털 전환 지원사업 공개모집</p>
                   </a>
@@ -137,8 +140,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide2.jpg"
-                        alt="서울특별시 예산낭비신고센터 집중 신고기간 알림">
+                      <img src="./assets/images/slide2.jpg" alt>
                     </div>
                     <p class="text-box">서울특별시 '예산낭비신고센터' 집중 신고기간 알림(6월~7월)</p>
                   </a>
@@ -146,7 +148,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide3.png" alt="제로페이 서울사랑상품권이 서울Pay로 옮겨가요">
+                      <img src="./assets/images/slide3.png" alt>
                     </div>
                     <p class="text-box">제로페이 서울사랑상품권 서울Pay+ 자동 이관 안내</p>
                   </a>
@@ -154,7 +156,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide4.jpg" alt="2023년도 서울시 외국인 명예시민 후보자 추천">
+                      <img src="./assets/images/slide4.jpg" alt>
                     </div>
                     <p class="text-box">2023 서울특별시 외국인 명예시민을 추천해주세요!</p>
                   </a>
@@ -162,7 +164,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide5.jpg" alt="대학생 천원 조식_ 한강 빛섬축제">
+                      <img src="./assets/images/slide5.jpg" alt>
                     </div>
                     <p class="text-box">대학생 천원 조식, 한강 빛섬 축제... 곧 서울에 생길 일!</p>
                   </a>
@@ -170,7 +172,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide6.jpg" alt="전국 최초 침수 예·경보제 도입">
+                      <img src="./assets/images/slide6.jpg" alt>
                     </div>
                     <p class="text-box">전국최고 '침수 예·경보제' 도입... 서울시 풍수해 안전대첵</p>
                   </a>
@@ -178,7 +180,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide7.jpg" alt="내게 맞춘 정책">
+                      <img src="./assets/images/slide7.jpg" alt>
                     </div>
                     <p class="text-box">'내게 맞춘 정책' 똑 부러지게 챙기고 행운의 선물까지!</p>
                   </a>
@@ -186,7 +188,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide8.jpg" alt="우리가 다짐하는 에너지절약 5행시 이벤트">
+                      <img src="./assets/images/slide8.jpg" alt>
                     </div>
                     <p class="text-box">[제로서울 챌린지] 하절기 '에너지절약' 5행시 짓기 이벤트</p>
                   </a>
@@ -194,8 +196,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide9.png"
-                        alt="여름방학 청소년 동행캠프 참여자 선착순 모집 안내">
+                      <img src="./assets/images/slide9.png" alt>
                     </div>
                     <p class="text-box">여름방학 청소년 동행캠프 참여자 선착순 모집 안내</p>
                   </a>
@@ -203,7 +204,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide10.jpg" alt="2023 서울 Web 3.0 페스티벌 개최 안내">
+                      <img src="./assets/images/slide10.jpg" alt>
                     </div>
                     <p class="text-box">2023 서울 Web 3.0 페스티벌 개최 안내</p>
                   </a>
@@ -211,8 +212,7 @@
                 <li class="swiper-slide">
                   <a href="">
                     <div class="thumb-box">
-                      <img src="./assets/images/slide11.jpg"
-                        alt="시원한 옷차림으로 지구를 선선하게 시원차림 캠페인">
+                      <img src="./assets/images/slide11.jpg" alt>
                     </div>
                     <p class="text-box">시원한 옷차림으로 지구를 선선하게, 시원차림 캠패인</p>
                   </a>
@@ -227,8 +227,7 @@
               </div>
             </div>
           </section>
-
-
+          <!------------------------------------------------>
           <section class="section-covid_mayor">
             <h2 class="blind">코로나 소식 및 시청뉴스</h2>
 
@@ -261,7 +260,7 @@
             </div>
           </section>
         </div>
-
+        <!------------------------------------------------>
         <section class="section-main_service">
           <div class="title-box">
             <h2 class="headline">주요 서비스</h2>
@@ -342,7 +341,7 @@
             </ul>
           </div>
         </section>
-
+        <!------------------------------------------------>
         <section class="section-complain">
           <h2 class="blind">민원 영역</h2>
           <ul class="complain-list">
@@ -352,28 +351,28 @@
                 <p class="desc">02-2133-9911~9915</p>
               </a>
             </li>
-            <i class="bar"></i>
+            <li class="bar"></li>
             <li class="complain-item">
               <a href="">
                 <p class="title">코로나19 서울시</p>
                 <p class="desc">선별진료소 현황</p>
               </a>
             </li>
-            <i class="bar"></i>
+            <li class="bar"></li>
             <li class="complain-item">
               <a href="">
                 <p class="title">6.1일부터 격리·실내마스크 의무 해제</p>
                 <p class="desc">코로나19관련 FAQ</p>
               </a>
             </li>
-            <i class="bar"></i>
+            <li class="bar"></li>
             <li class="complain-item">
               <a href="">
                 <p class="title">대한민국 정부 대표포털</p>
                 <p class="desc">정부24(민원)</p>
               </a>
             </li>
-            <i class="bar"></i>
+            <li class="bar"></li>
             <li class="complain-item">
               <a href="">
                 <p class="title">민원발급서비스</p>
@@ -382,7 +381,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-board">
           <div class="board-news">
             <h2 class="headline">이벤트 신청</h2>
@@ -460,7 +459,9 @@
                 </a>
               </li>
             </ul>
-            <a href="" class="link-more"></a>
+            <a href="" class="link-more">
+              <span class="blind">더보기</span>
+            </a>
           </div>
           <div class="frequently-area">
             <h2 class="headline">자주 찾은 서비스</h2>
@@ -518,7 +519,7 @@
             </ul>
           </div>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-field">
           <h2 class="headline">분야별정보</h2>
           <ul class="field-list">
@@ -564,14 +565,14 @@
             </li>
           </ul>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-news">
           <h2 class="headline">새소식</h2>
           <ul class="news-list">
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news1.jpg" alt="">
+                  <img src="./assets/images/news1.jpg" alt>
                   <p class="category environment">환경</p>
                 </div>
                 <p class="text-box">
@@ -582,7 +583,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news2.jpg" alt="">
+                  <img src="./assets/images/news2.jpg" alt>
                   <p class="category administration">행정</p>
                 </div>
                 <p class="text-box">
@@ -593,7 +594,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news3.jpg" alt="">
+                  <img src="./assets/images/news3.jpg" alt>
                   <p class="category environment">환경</p>
                 </div>
                 <p class="text-box">
@@ -604,7 +605,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news4.jpg" alt="">
+                  <img src="./assets/images/news4.jpg" alt>
                   <p class="category traffic">교통</p>
                 </div>
                 <p class="text-box">
@@ -615,7 +616,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news5.jpg" alt="">
+                  <img src="./assets/images/news5.jpg" alt>
                   <p class="category safety">안전</p>
                 </div>
                 <p class="text-box">
@@ -626,7 +627,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news6.jpg" alt="">
+                  <img src="./assets/images/news6.jpg" alt>
                   <p class="category environment">환경</p>
                 </div>
                 <p class="text-box">
@@ -637,7 +638,7 @@
             <li class="news-item">
               <a href="">
                 <div class="image-box">
-                  <img src="./assets/images/news7.jpg" alt="">
+                  <img src="./assets/images/news7.jpg" alt>
                   <p class="category welfare">복지</p>
                 </div>
                 <p class="text-box">
@@ -647,12 +648,15 @@
             </li>
             <li class="news-item customized-manual">
               <a href="">
-                <img src="./assets/images/customized-manual.jpg" alt="">
+                <div class="image-box">
+                  <img src="./assets/images/customized-manual.jpg" alt>
+                </div>
+                <p class="blind">서울사용설명서</p>
               </a>
             </li>
           </ul>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-seoul">
           <div class="video-area">
             <h2 class="headline">서울영상</h2>
@@ -670,8 +674,8 @@
                 <a href="">
                   <span class="category">고시공고</span>
                   <span class="text">시립동작노인종합복지관 민간위탁 수탁법인 선경결과 공고</span>
+                </a>
               </li>
-              </a>
               <li class="news-item">
                 <a href="">
                   <span class="category">
@@ -743,40 +747,57 @@
             </ul>
           </div>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-notice">
+          <h2 class="blind">공지사항 슬라이드</h2>
           <div class="content">
             <div class="swiper">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide1.jpg"
-                      alt="찾아가는 여성 취업 상담버스 일자리 부르릉">
+                    <div class="image-box">
+                      <img src="./assets/images/notice-slide1.jpg" alt>
+                    </div>
+                    <p class="blind desc">찾아가는 여성 취업 상담버스 일자리 부르릉</p>
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide2.jpg" alt="마약에 대한 호기심 곧 죽음입니다">
+                    <div class="image-box">
+                      <img src="./assets/images/notice-slide2.jpg" alt>
+                    </div>
+                    <p class="blind desc">마약에 대한 호기심 곧 죽음입니다</p>
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide3.jpg" alt="6.25 비정규군 공로자 보상신청 안내">
+                    <div class="image-box">
+                      <img src="./assets/images/notice-slide3.jpg" alt>
+                    </div>
+                    <p class="blind desc">6.25 비정규군 공로자 보상신청 안내</p>
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide4.jpg" alt="2030부산세계박람회">
+                    <div class="image-box">
+                      <img src="./assets/images/notice-slide4.jpg" alt>
+                    </div>
+                    <p class="blind desc">2030부산세계박람회</p>
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide5.jpg" alt="부패·공익신고">
+                    <div class="image-box">
+                      <img src="./assets/images/notice-slide5.jpg" alt>
+                    </div>
+                    <p class="blind desc">부패·공익신고</p>
                   </a>
                 </li>
                 <li class="swiper-slide">
                   <a href="">
-                    <img src="./assets/images/notice-slide3.jpg" alt="2030부산세계박람회">
+                    <div class="image-box"><img src="./assets/images/notice-slide3.jpg" alt>
+                    </div>
+                    <p class="blind desc">2030부산세계박람회</p>
                   </a>
                 </li>
               </ul>
@@ -791,8 +812,9 @@
 
           </div>
         </section>
-
+        <!-- -------------------------------------------- -->
         <section class="section-related">
+          <h2 class="blind">관련사이트</h2>
           <ul class="related-list">
             <li class="related-item">
               <button class="related-btn">
@@ -1122,7 +1144,7 @@
       <div class="fixed-btn">
         <button class="to-top" aria-label="상단으로">
         </button>
-        <img src="./assets/images/btn_top.png" alt="">
+        <img src="./assets/images/btn_top.png" alt>
       </div>
 
     </main>
@@ -1132,20 +1154,56 @@
 
         <div class="noori-link">
           <ul class="noori-list">
-            <li class="noori-item"><a href="#">누리집 도우미</a></li>
-            <li class="noori-item"><a href="#" class="private-info">개인정보처리방침</a></li>
-            <li class="noori-item"><a href="#">저작권 정책</a></li>
-            <li class="noori-item"><a href="#">영상정보처리기기 운영 관리방침</a></li>
-            <li class="noori-item"><a href="#">누리집 바로잡기</a></li>
-            <li class="noori-item"><a href="#">누리집지도</a></li>
+            <li class="noori-item">
+              <a href="">누리집 도우미</a>
+            </li>
+            <li class="noori-item">
+              <a href="" class="private-info">개인정보처리방침</a>
+            </li>
+            <li class="noori-item">
+              <a href="">저작권 정책</a>
+            </li>
+            <li class="noori-item">
+              <a href="">영상정보처리기기 운영 관리방침</a>
+            </li>
+            <li class="noori-item">
+              <a href="">누리집 바로잡기</a>
+            </li>
+            <li class="noori-item">
+              <a href="">누리집지도</a>
+            </li>
           </ul>
           <ul class="sns-list">
-            <li class="sns-item facebook"><a href="#"><span class="blind">페이스북</span></a></li>
-            <li class="sns-item twiter"><a href="#"><span class="blind">트위터</span></a></li>
-            <li class="sns-item instagram"><a href="#"><span class="blind">인스타그램</span></a></li>
-            <li class="sns-item kakaostory"><a href="#"><span class="blind">카카오스토리</span></a></li>
-            <li class="sns-item youtube"><a href="#"><span class="blind">유튜브</span></a></li>
-            <li class="sns-item blog"><a href="#"><span class="blind">네이버 블로그</span></a></li>
+            <li class="sns-item facebook">
+              <a href="">
+                <span class="blind">페이스북</span>
+              </a>
+            </li>
+            <li class="sns-item twiter">
+              <a href="">
+                <span class="blind">트위터</span>
+              </a>
+            </li>
+            <li class="sns-item instagram">
+              <a href="">
+                <span class="blind">인스타그램</span>
+              </a>
+            </li>
+            <li class="sns-item kakaostory">
+              <a href="">
+                <span class="blind">카카오스토리</span>
+              </a>
+            </li>
+            <li class="sns-item youtube">
+              <a href="">
+                <span class="blind">유튜브</span>
+              </a>
+            </li>
+            <li class="sns-item blog">
+              <a href="">
+                <span class="blind">네이버 블로그</span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -1163,7 +1221,9 @@
 
           <div class="address">
             <p class="addr">
-              서울특별시청 04524 서울특별시 중구 세종대로 110 <span><a href="">[찾아오시는 길]</a></span>
+              서울특별시청 04524 서울특별시 중구 세종대로 110 <span>
+                <a href="">[찾아오시는 길]</a>
+              </span>
             </p>
             <p class="info2-item">대표전화: <a href="tel:+02-120">02-120</a> 또는 <a href="tel:+02-731-2120">02-731-2120</a>
             </p>
