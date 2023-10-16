@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
 html,
 body,
@@ -172,15 +173,10 @@ button {
 }
 
 .wrapper {
-  min-width: 1170px;
+  min-width: 1270px;
 }
 
 .inner {
-  width: 1152px;
-  margin: 0 auto;
-}
-
-.common-inner {
   width: 1152px;
   margin: 0 auto;
 }
@@ -248,24 +244,24 @@ button {
 .footer {
   padding-top: 35px;
 }
-.footer .noori-link {
+.footer .link-area {
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 15px;
 }
-.footer .noori-link .noori-list {
+.footer .link-area .noori-list {
   display: flex;
 }
-.footer .noori-link .noori-list .noori-item a {
+.footer .link-area .noori-list .noori-item a {
   font-size: 12px;
   color: #636363;
   font-weight: 300;
   display: flex;
   align-items: center;
 }
-.footer .noori-link .noori-list .noori-item:not(:last-child) a::after {
+.footer .link-area .noori-list .noori-item:not(:last-child) a::after {
   content: "";
   display: inline-block;
   background-color: #dcdcdc;
@@ -273,98 +269,95 @@ button {
   height: 12px;
   margin: 0px 10px;
 }
-.footer .noori-link .noori-list .noori-item .private-info {
+.footer .link-area .noori-list .noori-item .private-info {
   font-weight: 500;
   color: #222;
 }
-.footer .noori-link .sns-list {
+.footer .link-area .sns-list {
   display: flex;
   gap: 10px;
 }
-.footer .noori-link .sns-list .sns-item {
+.footer .link-area .sns-list .sns-item {
   width: 24px;
   height: 24px;
 }
-.footer .noori-link .sns-list .sns-item.facebook {
+.footer .link-area .sns-list .sns-item.facebook {
   background: url("../images/icon_set_sns.png") no-repeat -25px 0;
   cursor: pointer;
 }
-.footer .noori-link .sns-list .sns-item.twiter {
+.footer .link-area .sns-list .sns-item.twiter {
   background: url("../images/icon_set_sns.png") no-repeat -50px 0;
   cursor: pointer;
 }
-.footer .noori-link .sns-list .sns-item.instagram {
+.footer .link-area .sns-list .sns-item.instagram {
   background: url("../images/icon_set_sns.png") no-repeat -75px 0;
   cursor: pointer;
 }
-.footer .noori-link .sns-list .sns-item.kakaostory {
+.footer .link-area .sns-list .sns-item.kakaostory {
   background: url("../images/icon_set_sns.png") no-repeat -100px 0;
   cursor: pointer;
 }
-.footer .noori-link .sns-list .sns-item.youtube {
+.footer .link-area .sns-list .sns-item.youtube {
   background: url("../images/icon_set_sns.png") no-repeat -125px 0;
   cursor: pointer;
 }
-.footer .noori-link .sns-list .sns-item.blog {
+.footer .link-area .sns-list .sns-item.blog {
   background: url("../images/icon_set_sns.png") no-repeat -150px 0;
   cursor: pointer;
 }
-.footer .address-info {
+.footer .address-area {
   display: flex;
   padding: 22px 0;
 }
-.footer .address-info .tel_120 {
+.footer .address-area .qna-area {
   width: 110px;
 }
-.footer .address-info .tel_120 p {
-  font-size: 10px;
-  line-height: 12px;
-  font-weight: 500;
-  letter-spacing: -1px;
-}
-.footer .address-info .tel_120 p:first-child {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+.footer .address-area .qna-area .group {
   display: flex;
   align-items: center;
 }
-.footer .address-info .tel_120 .tel_icon {
+.footer .address-area .qna-area .text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer .address-area .qna-area .num {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 2px;
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.footer .address-info .tel_120 .tel_icon::before {
+.footer .address-area .qna-area .num::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
   background: url("../images/icon_set_common.png") no-repeat -221px -1px;
-  margin-left: 20px;
 }
-.footer .address-info .tel_120 .tel_icon .num {
-  font-size: 24px;
-  font-weight: 600;
-  margin-left: 2px;
+.footer .address-area .qna-area p {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
-.footer .address-info .address {
+.footer .address-area .address {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
   color: #636363;
 }
-.footer .address-info p,
-.footer .address-info small {
+.footer .address-area p,
+.footer .address-area small {
   font-size: 12px;
   color: #636363;
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 17px;
 }
-.footer .address-info .mark-area {
-  display: flex;
-  align-items: center;
+.footer .address-area .link-accessibility {
   margin-left: auto;
 }
 
@@ -571,40 +564,37 @@ button {
   color: #009944;
 }
 
-.grid-area {
+.flex-area {
   margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 350px;
-  gap: 20px;
+  display: flex;
+  gap: 22px;
 }
-.grid-area .section-issue {
+.flex-area .section-issue {
   display: flex;
   align-items: center;
-  grid-column: span 7;
 }
-.grid-area .section-issue .issue-button-area {
+.flex-area .section-issue .issue-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90px;
+  width: 80px;
   height: 100%;
 }
-.grid-area .section-issue .issue-button-area button {
+.flex-area .section-issue .issue-nav button {
   flex: 1;
   width: 100%;
   font-size: 14px;
   background-color: #d2e1e9;
   cursor: pointer;
 }
-.grid-area .section-issue .issue-button-area button.btn-news {
+.flex-area .section-issue .issue-nav button.btn-news {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.grid-area .section-issue .issue-button-area button.btn-news:before {
+.flex-area .section-issue .issue-nav button.btn-news:before {
   content: "";
   width: 50px;
   height: 50px;
@@ -613,14 +603,14 @@ button {
   border-radius: 50%;
   background-color: #fff;
 }
-.grid-area .section-issue .issue-button-area button.btn-citizen {
+.flex-area .section-issue .issue-nav button.btn-citizen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.grid-area .section-issue .issue-button-area button.btn-citizen:before {
+.flex-area .section-issue .issue-nav button.btn-citizen:before {
   content: "";
   width: 50px;
   height: 50px;
@@ -629,14 +619,14 @@ button {
   border-radius: 50%;
   background-color: #fff;
 }
-.grid-area .section-issue .issue-button-area button.on {
+.flex-area .section-issue .issue-nav button.on {
   background-color: #0158a8;
   position: relative;
 }
-.grid-area .section-issue .issue-button-area button.on span {
+.flex-area .section-issue .issue-nav button.on span {
   color: #fff;
 }
-.grid-area .section-issue .issue-button-area button.on::after {
+.flex-area .section-issue .issue-nav button.on::after {
   content: " ";
   position: absolute;
   left: 99%;
@@ -649,31 +639,31 @@ button {
   border-color: transparent transparent transparent #0158a8;
   margin-top: -25px;
 }
-.grid-area .section-issue .swiper {
-  width: 720px;
+.flex-area .section-issue .swiper {
+  width: 690px;
   height: 350px;
   margin-right: 0;
   margin-left: 0;
 }
-.grid-area .section-issue .swiper-slide {
+.flex-area .section-issue .swiper-slide {
   width: 100%;
 }
-.grid-area .section-issue .swiper-slide a {
+.flex-area .section-issue .swiper-slide a {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   height: 100%;
 }
-.grid-area .section-issue .swiper-slide a .thumb-box {
+.flex-area .section-issue .swiper-slide a .thumb-box {
   width: 100%;
 }
-.grid-area .section-issue .swiper-slide a .thumb-box img {
+.flex-area .section-issue .swiper-slide a .thumb-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.grid-area .section-issue .swiper-slide a .text-box {
+.flex-area .section-issue .swiper-slide a .text-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -685,7 +675,7 @@ button {
   font-size: 14px;
   font-weight: 300;
 }
-.grid-area .section-issue .swiper .swiper-control-area {
+.flex-area .section-issue .swiper .swiper-control-area {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -695,18 +685,18 @@ button {
   z-index: 1;
   padding: 12px;
 }
-.grid-area .section-issue .swiper .swiper-control-area .pagination {
+.flex-area .section-issue .swiper .swiper-control-area .pagination {
   width: 40px;
   color: #fff;
   display: flex;
   align-items: center;
 }
-.grid-area .section-issue .swiper .swiper-control-area .pagination span {
+.flex-area .section-issue .swiper .swiper-control-area .pagination span {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
 }
-.grid-area .section-issue .swiper .swiper-control-area .pagination::after {
+.flex-area .section-issue .swiper .swiper-control-area .pagination::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -714,35 +704,35 @@ button {
   background: rgba(255, 255, 255, 0.5);
   margin-left: 10px;
 }
-.grid-area .section-issue .swiper .swiper-control-area .btn-prev {
+.flex-area .section-issue .swiper .swiper-control-area .btn-prev {
   background: url("../images/icon_set_common2.png") no-repeat -242px -284px;
   width: 20px;
   height: 20px;
   margin-left: 6px;
   cursor: pointer;
 }
-.grid-area .section-issue .swiper .swiper-control-area .btn-autoplay {
+.flex-area .section-issue .swiper .swiper-control-area .btn-autoplay {
   width: 20px;
   height: 20px;
   background: url("../images/icon_set_common2.png") no-repeat -269px -284px;
   cursor: pointer;
 }
-.grid-area .section-issue .swiper .swiper-control-area .btn-autoplay.pause {
+.flex-area .section-issue .swiper .swiper-control-area .btn-autoplay.pause {
   background: url("../images/icon_set_common2.png") no-repeat -282px -284px;
 }
-.grid-area .section-issue .swiper .swiper-control-area .btn-next {
+.flex-area .section-issue .swiper .swiper-control-area .btn-next {
   background: url("../images/icon_set_common2.png") no-repeat -255px -284px;
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
-.grid-area .box2 {
+.flex-area .box2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  grid-column: span 3;
+  flex: 1;
 }
-.grid-area .box2 .section-covid19 {
+.flex-area .box2 .section-covid19 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -751,54 +741,64 @@ button {
   background: #99ddf4;
   letter-spacing: -1px;
 }
-.grid-area .box2 .section-covid19 .title {
+.flex-area .box2 .section-covid19 .title {
   font-size: 15px;
   font-weight: 600;
 }
-.grid-area .box2 .section-covid19 .confirmed {
+.flex-area .box2 .section-covid19 .confirmed {
   display: flex;
   align-items: center;
   background: #319ac6;
-  color: #fff;
-  font-weight: 300;
-  font-size: 14px;
   padding-left: 4px;
   border-radius: 5px;
   overflow: hidden;
 }
-.grid-area .box2 .section-covid19 .confirmed .count {
+.flex-area .box2 .section-covid19 .confirmed .person {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+.flex-area .box2 .section-covid19 .confirmed .count {
   margin: 0 3px;
   font-weight: 400;
 }
-.grid-area .box2 .section-covid19 .confirmed .all-confirmed-btn {
-  font-size: 13px;
-  border-radius: 5px;
-  background: #000;
-  padding: 4px;
-  margin-left: 3px;
+.flex-area .box2 .section-covid19 .confirmed .link-all {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  padding: 4px;
+  margin-left: 3px;
   cursor: pointer;
 }
-.grid-area .box2 .section-covid19 .confirmed-period {
+.flex-area .box2 .section-covid19 .confirmed .link-all::after {
+  content: "▶";
+  font-size: 9px;
+}
+.flex-area .box2 .section-covid19 .date {
   font-size: 12px;
   color: #000;
 }
-.grid-area .box2 .section-mayor_news {
+.flex-area .box2 .section-administration_news {
   position: relative;
   height: 204px;
 }
-.grid-area .box2 .section-mayor_news .thumb-box {
+.flex-area .box2 .section-administration_news .thumb-box {
   width: 100%;
   height: 100%;
 }
-.grid-area .box2 .section-mayor_news .thumb-box img {
+.flex-area .box2 .section-administration_news .thumb-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.grid-area .box2 .section-mayor_news .text-box {
+.flex-area .box2 .section-administration_news .text-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -810,7 +810,7 @@ button {
   padding: 15px;
   text-align: center;
 }
-.grid-area .box2 .section-mayor_wish {
+.flex-area .box2 .section-mayor_wish {
   position: relative;
   width: 100%;
   height: 90px;
@@ -818,7 +818,7 @@ button {
   background-repeat: no-repeat;
   background-size: 100% 90px;
 }
-.grid-area .box2 .section-mayor_wish .top-btn {
+.flex-area .box2 .section-mayor_wish .title {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -829,7 +829,7 @@ button {
   color: #fff;
   letter-spacing: -1px;
 }
-.grid-area .box2 .section-mayor_wish .bottom-btn-area {
+.flex-area .box2 .section-mayor_wish .wish-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -840,7 +840,7 @@ button {
   height: 26px;
   font-size: 12px;
 }
-.grid-area .box2 .section-mayor_wish .bottom-btn-area button {
+.flex-area .box2 .section-mayor_wish .wish-nav .link-wish {
   flex: 1;
   display: flex;
   align-items: center;
@@ -849,49 +849,40 @@ button {
   color: #fff;
   background: #84694a;
 }
-.grid-area .box2 .section-mayor_wish .bottom-btn-area button:first-child {
+.flex-area .box2 .section-mayor_wish .wish-nav .link-wish:first-child {
   letter-spacing: -1px;
 }
 
 .section-service {
   margin-top: 40px;
+  position: relative;
 }
-.section-service .title-box {
+.section-service .group-header {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #dbdbdb;
 }
-.section-service .title-box .link-allNoori {
-  display: inline-block;
-  text-align: center;
-  font-size: 15px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  width: 90px;
-  margin-left: 30px;
-  font-weight: 300;
-}
-.section-service .title-box .link-area {
+.section-service .group-header .link-area {
   display: flex;
   align-items: center;
   position: relative;
   gap: 10px;
   margin-left: auto;
 }
-.section-service .title-box .link-area .link-story-seoul {
+.section-service .group-header .link-area .link-story {
   display: inline-block;
   width: 65px;
   height: 30px;
   background: url("../images/main-service-event.png") no-repeat 0 0;
 }
-.section-service .title-box .link-area .bar {
+.section-service .group-header .link-area .bar {
   display: inline-block;
   width: 1px;
   height: 15px;
   background-color: #e2e5eb;
 }
-.section-service .title-box .link-area .link-festival-seoul {
+.section-service .group-header .link-area .link-festival {
   background: #0f0;
   display: inline-block;
   width: 95px;
@@ -919,41 +910,52 @@ button {
   width: 60px;
   height: 60px;
 }
-.section-service .service-item.public-service .title::before {
+.section-service .service-item.public .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -360px 0;
 }
-.section-service .service-item.response-station .title::before {
+.section-service .service-item.response .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat 0 0;
 }
 .section-service .service-item.job .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -120px 0;
 }
-.section-service .service-item.property-info .title::before {
+.section-service .service-item.property .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -300px 0;
 }
-.section-service .service-item.tel-4050 .title::before {
+.section-service .service-item.tel .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -180px 0;
 }
-.section-service .service-item.welfare-portal .title::before {
+.section-service .service-item.welfare .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -960px 0;
 }
-.section-service .service-item.residential-portal .title::before {
+.section-service .service-item.residential .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -780px 0;
 }
-.section-service .service-item.monddang-info .title::before {
+.section-service .service-item.monddang .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1140px 0;
 }
-.section-service .service-item.imagine-seoul .title::before {
+.section-service .service-item.hands .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1020px 0;
 }
-.section-service .service-item.my-hands-seoul .title::before {
+.section-service .service-item.imagine .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -60px 0;
 }
-.section-service .service-item.e-book .title::before {
+.section-service .service-item.eBook .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1080px 0;
 }
-.section-service .service-item.city-council .title::before {
+.section-service .service-item.council .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -600px 0;
+}
+.section-service .link-all {
+  position: absolute;
+  top: 2px;
+  left: 147px;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  width: 90px;
+  font-weight: 300;
 }
 
 .section-complain {
@@ -1178,6 +1180,7 @@ button {
 
 .section-news {
   margin-top: 20px;
+  position: relative;
 }
 .section-news .headline {
   margin-bottom: 20px;
@@ -1245,6 +1248,23 @@ button {
   height: 248px;
   width: 273px;
 }
+.section-news .link-all {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #7d7d7d;
+}
+.section-news .link-all::after {
+  content: "";
+  display: block;
+  background: url(../images/icon_set_common.png) no-repeat -62px -260.5px;
+  width: 15px;
+  height: 15px;
+}
 
 .section-seoul {
   display: flex;
@@ -1287,10 +1307,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-.section-seoul .news-item a {
+.section-seoul .news-item {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.section-seoul .news-item a {
   line-height: 37px;
 }
 .section-seoul .news-item a .category {
@@ -1311,6 +1333,14 @@ button {
   background-repeat: no-repeat;
   width: 350px;
   height: 195px;
+  position: relative;
+}
+.section-seoul .sns-area .link-all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .section-seoul .sns-area .headline {
   padding: 13px 10px;
@@ -1328,6 +1358,8 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 .section-seoul .sns-item a::before {
   content: "";
@@ -1367,21 +1399,19 @@ button {
 
 .section-notice {
   padding: 50px 0;
-}
-.section-notice .content {
   position: relative;
 }
-.section-notice .content .swiper {
+.section-notice .swiper {
   padding-bottom: 40px;
 }
-.section-notice .content .swiper-wrapper {
+.section-notice .swiper-wrapper {
   display: flex;
   align-items: center;
 }
-.section-notice .content .swiper-wrapper .swiper-slide img {
+.section-notice .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
-.section-notice .content .control-area {
+.section-notice .control-area {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1390,17 +1420,17 @@ button {
   right: 0;
   z-index: 1;
 }
-.section-notice .content .control-area .pagination {
+.section-notice .control-area .pagination {
   width: 40px;
   display: flex;
   align-items: center;
   color: #222;
 }
-.section-notice .content .control-area .pagination span {
+.section-notice .control-area .pagination span {
   font-size: 14px;
   font-weight: 300;
 }
-.section-notice .content .control-area .pagination::after {
+.section-notice .control-area .pagination::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -1408,7 +1438,7 @@ button {
   background: rgba(255, 255, 255, 0.5);
   margin-left: 10px;
 }
-.section-notice .content .control-area .btn-prev {
+.section-notice .control-area .btn-prev {
   background: url("../images/icon_set_common2.png") no-repeat -45px -43px;
   width: 20px;
   height: 20px;
@@ -1416,7 +1446,7 @@ button {
   border-left: 1px solid #999;
   border: 1px solid #999;
 }
-.section-notice .content .control-area .notice-btn-autoplay {
+.section-notice .control-area .notice-btn-autoplay {
   background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
   width: 20px;
   height: 20px;
@@ -1424,7 +1454,7 @@ button {
   border: 1px solid #999;
   border-left: none;
 }
-.section-notice .content .control-area .pause {
+.section-notice .control-area .pause {
   width: 20px;
   height: 20px;
   background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
@@ -1432,7 +1462,7 @@ button {
   border: 1px solid #999;
   border-left: none;
 }
-.section-notice .content .control-area .btn-next {
+.section-notice .control-area .btn-next {
   background: url("../images/icon_set_common2.png") no-repeat -85px -43px;
   width: 20px;
   height: 20px;
@@ -1525,4 +1555,12 @@ button {
 .fixed-btn.show {
   opacity: 1;
   bottom: 100px;
+}
+
+@media (max-width: 1270px) {
+  .fixed-btn {
+    left: auto;
+    right: 0;
+    margin-left: auto;
+  }
 }
