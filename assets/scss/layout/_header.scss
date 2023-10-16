@@ -1,54 +1,50 @@
 .header {
-  .common-inner {
-    .top-header {
-      display: flex;
-      align-items: center;
-      height: 50px;
-    }
+  .inner {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
 
-    .logo {
-
-      a {
-        display: block;
-        background-image: url("../images/icon_common.png");
-        background-repeat: no-repeat;
-        background-position: -5px -166px;
-        width: 105px;
-        height: 27px;
-      }
-    }
-
-    .auth-area {
-      margin-left: auto;
-      font-size: 14px;
-      font-weight: 500;
-      display: flex;
-      gap: 14px;
-
-      a {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-      }
-    }
-
-    .gnb {
-      padding-left: 70px;
-
-      .nav-list {
-        display: flex;
-        gap: 20px;
-      }
-
-      .nav-item {
-        .nav {
-          color: #222;
-          font-weight: 500;
-        }
-      }
+  .logo {
+    a {
+      display: block;
+      background-image: url("../images/icon_common.png");
+      background-repeat: no-repeat;
+      background-position: -5px -166px;
+      width: 105px;
+      height: 27px;
     }
   }
 
+  .util-area {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    gap: 14px;
 
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+  }
 
+  .gnb {
+    padding-left: 70px;
+
+    .nav {
+      &-list {
+        display: flex;
+        gap: 20px;
+      }
+    }
+
+    .nav-list {
+      .link-nav {
+        color: #222;
+        font-weight: 500;
+      }
+    }
+  }
 }

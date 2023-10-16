@@ -208,12 +208,12 @@ button {
   transform: translateY(0);
 }
 
-.header .common-inner .top-header {
+.header .inner {
   display: flex;
   align-items: center;
   height: 50px;
 }
-.header .common-inner .logo a {
+.header .logo a {
   display: block;
   background-image: url("../images/icon_common.png");
   background-repeat: no-repeat;
@@ -221,26 +221,26 @@ button {
   width: 105px;
   height: 27px;
 }
-.header .common-inner .auth-area {
+.header .util-area {
   margin-left: auto;
   font-size: 14px;
   font-weight: 500;
   display: flex;
   gap: 14px;
 }
-.header .common-inner .auth-area a {
+.header .util-area a {
   display: flex;
   align-items: center;
   font-size: 14px;
 }
-.header .common-inner .gnb {
+.header .gnb {
   padding-left: 70px;
 }
-.header .common-inner .gnb .nav-list {
+.header .gnb .nav-list {
   display: flex;
   gap: 20px;
 }
-.header .common-inner .gnb .nav-item .nav {
+.header .gnb .nav-list .link-nav {
   color: #222;
   font-weight: 500;
 }
@@ -368,7 +368,7 @@ button {
   margin-left: auto;
 }
 
-.popup-box {
+.popup {
   display: flex;
   justify-content: center;
   position: relative;
@@ -376,17 +376,17 @@ button {
   height: -moz-fit-content;
   height: fit-content;
 }
-.popup-box.no {
+.popup.no {
   display: none;
 }
-.popup-box .link-popup {
+.popup .link-popup {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 }
-.popup-box .popup {
+.popup-box {
   position: relative;
 }
 .popup-box .image-box img {
@@ -473,19 +473,20 @@ button {
   font-weight: 300;
 }
 
-.section-search_weather {
+.box1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: 80px;
+  margin-top: 13px;
+  margin-bottom: 30px;
 }
-.section-search_weather .slogan {
+.box1 .slogan-area {
   display: block;
   background: url("../images/seoul-slogan.png") no-repeat;
   width: 133px;
   height: 51px;
 }
-.section-search_weather .search-area {
+.box1 .search-area {
   border: 3px solid #2292e9;
   height: 42px;
   width: 520px;
@@ -493,24 +494,24 @@ button {
   align-items: center;
   position: relative;
 }
-.section-search_weather .search-area > * {
+.box1 .search-area > * {
   width: 100%;
 }
-.section-search_weather .search-input {
+.box1 .search-input {
   padding: 10px;
   width: calc(100% - 100px);
 }
-.section-search_weather .search-input::-moz-placeholder {
+.box1 .search-input::-moz-placeholder {
   color: #2292e9;
   font-size: 14px;
   font-weight: 300;
 }
-.section-search_weather .search-input::placeholder {
+.box1 .search-input::placeholder {
   color: #2292e9;
   font-size: 14px;
   font-weight: 300;
 }
-.section-search_weather .search-btn-area {
+.box1 .search-btn-area {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -519,33 +520,55 @@ button {
   top: 50%;
   transform: translateY(-50%);
 }
-.section-search_weather .search-btn-area .keyboard-btn {
+.box1 .search-btn-area .keyboard-btn {
   width: 29px;
   height: 16px;
   background: url("../images/search_input_icon.png") no-repeat;
 }
-.section-search_weather .search-btn-area .search-btn {
+.box1 .search-btn-area .search-btn {
   width: 36px;
   height: 36px;
   background: url("../images/icon_set_common.png") -40px -97px;
 }
-.section-search_weather .weather-area {
+.box1 .weather-area {
   width: 270px;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url("../images/header-weather.png");
+  align-items: flex-start;
 }
-.section-search_weather .weather-area .title {
+.box1 .weather-area .title {
   font-size: 14px;
   font-weight: 500;
   padding-top: 15px;
 }
-.section-search_weather .weather-area .status {
-  font-size: 18px;
-  color: #fff;
-  padding: 13px 0;
+.box1 .weather-area .temperatures {
+  font-size: 25px;
+}
+.box1 .weather-area .right {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.box1 .weather-area .right .flex-area {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+.box1 .weather-area .right .flex-area .status {
+  font-size: 16px;
+  letter-spacing: -0.1em;
+  line-height: 1.35em;
+  font-weight: 300;
+}
+.box1 .weather-area .right .flex-area + * {
+  font-size: 13px;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+.box1 .weather-area .right .flex-area + * .good {
+  color: #0068b7;
+}
+.box1 .weather-area .right .flex-area + * .average {
+  color: #009944;
 }
 
 .grid-area {
@@ -713,13 +736,13 @@ button {
   height: 20px;
   cursor: pointer;
 }
-.grid-area .section-covid_mayor {
+.grid-area .box2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
   grid-column: span 3;
 }
-.grid-area .section-covid_mayor .covid19-area {
+.grid-area .box2 .section-covid19 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -728,11 +751,11 @@ button {
   background: #99ddf4;
   letter-spacing: -1px;
 }
-.grid-area .section-covid_mayor .covid19-area .title {
+.grid-area .box2 .section-covid19 .title {
   font-size: 15px;
   font-weight: 600;
 }
-.grid-area .section-covid_mayor .covid19-area .confirmed {
+.grid-area .box2 .section-covid19 .confirmed {
   display: flex;
   align-items: center;
   background: #319ac6;
@@ -743,11 +766,11 @@ button {
   border-radius: 5px;
   overflow: hidden;
 }
-.grid-area .section-covid_mayor .covid19-area .confirmed .count {
+.grid-area .box2 .section-covid19 .confirmed .count {
   margin: 0 3px;
   font-weight: 400;
 }
-.grid-area .section-covid_mayor .covid19-area .confirmed .all-confirmed-btn {
+.grid-area .box2 .section-covid19 .confirmed .all-confirmed-btn {
   font-size: 13px;
   border-radius: 5px;
   background: #000;
@@ -757,25 +780,25 @@ button {
   align-items: center;
   cursor: pointer;
 }
-.grid-area .section-covid_mayor .covid19-area .confirmed-period {
+.grid-area .box2 .section-covid19 .confirmed-period {
   font-size: 12px;
   color: #000;
 }
-.grid-area .section-covid_mayor .mayor-news-area {
+.grid-area .box2 .section-mayor_news {
   position: relative;
   height: 204px;
 }
-.grid-area .section-covid_mayor .mayor-news-area .thumb-box {
+.grid-area .box2 .section-mayor_news .thumb-box {
   width: 100%;
   height: 100%;
 }
-.grid-area .section-covid_mayor .mayor-news-area .thumb-box img {
+.grid-area .box2 .section-mayor_news .thumb-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.grid-area .section-covid_mayor .mayor-news-area .text-box {
+.grid-area .box2 .section-mayor_news .text-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -787,7 +810,7 @@ button {
   padding: 15px;
   text-align: center;
 }
-.grid-area .section-covid_mayor .mayor-wish-area {
+.grid-area .box2 .section-mayor_wish {
   position: relative;
   width: 100%;
   height: 90px;
@@ -795,7 +818,7 @@ button {
   background-repeat: no-repeat;
   background-size: 100% 90px;
 }
-.grid-area .section-covid_mayor .mayor-wish-area .top-btn {
+.grid-area .box2 .section-mayor_wish .top-btn {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -806,7 +829,7 @@ button {
   color: #fff;
   letter-spacing: -1px;
 }
-.grid-area .section-covid_mayor .mayor-wish-area .bottom-btn-area {
+.grid-area .box2 .section-mayor_wish .bottom-btn-area {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -817,7 +840,7 @@ button {
   height: 26px;
   font-size: 12px;
 }
-.grid-area .section-covid_mayor .mayor-wish-area .bottom-btn-area button {
+.grid-area .box2 .section-mayor_wish .bottom-btn-area button {
   flex: 1;
   display: flex;
   align-items: center;
@@ -826,20 +849,20 @@ button {
   color: #fff;
   background: #84694a;
 }
-.grid-area .section-covid_mayor .mayor-wish-area .bottom-btn-area button:first-child {
+.grid-area .box2 .section-mayor_wish .bottom-btn-area button:first-child {
   letter-spacing: -1px;
 }
 
-.section-main_service {
+.section-service {
   margin-top: 40px;
 }
-.section-main_service .title-box {
+.section-service .title-box {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #dbdbdb;
 }
-.section-main_service .title-box .link-allNoori {
+.section-service .title-box .link-allNoori {
   display: inline-block;
   text-align: center;
   font-size: 15px;
@@ -849,38 +872,38 @@ button {
   margin-left: 30px;
   font-weight: 300;
 }
-.section-main_service .title-box .link-area {
+.section-service .title-box .link-area {
   display: flex;
   align-items: center;
   position: relative;
   gap: 10px;
   margin-left: auto;
 }
-.section-main_service .title-box .link-area .link-story-seoul {
+.section-service .title-box .link-area .link-story-seoul {
   display: inline-block;
   width: 65px;
   height: 30px;
   background: url("../images/main-service-event.png") no-repeat 0 0;
 }
-.section-main_service .title-box .link-area .bar {
+.section-service .title-box .link-area .bar {
   display: inline-block;
   width: 1px;
   height: 15px;
   background-color: #e2e5eb;
 }
-.section-main_service .title-box .link-area .link-festival-seoul {
+.section-service .title-box .link-area .link-festival-seoul {
   background: #0f0;
   display: inline-block;
   width: 95px;
   height: 30px;
   background: url("../images/main-service-event.png") no-repeat -65px 0;
 }
-.section-main_service .service-list {
+.section-service .service-list {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
-.section-main_service .service-item .title {
+.section-service .service-item .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -891,45 +914,45 @@ button {
   height: 90px;
   font-weight: 300;
 }
-.section-main_service .service-item .title::before {
+.section-service .service-item .title::before {
   content: "";
   width: 60px;
   height: 60px;
 }
-.section-main_service .service-item.public-service .title::before {
+.section-service .service-item.public-service .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -360px 0;
 }
-.section-main_service .service-item.response-station .title::before {
+.section-service .service-item.response-station .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat 0 0;
 }
-.section-main_service .service-item.job .title::before {
+.section-service .service-item.job .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -120px 0;
 }
-.section-main_service .service-item.property-info .title::before {
+.section-service .service-item.property-info .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -300px 0;
 }
-.section-main_service .service-item.tel-4050 .title::before {
+.section-service .service-item.tel-4050 .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -180px 0;
 }
-.section-main_service .service-item.welfare-portal .title::before {
+.section-service .service-item.welfare-portal .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -960px 0;
 }
-.section-main_service .service-item.residential-portal .title::before {
+.section-service .service-item.residential-portal .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -780px 0;
 }
-.section-main_service .service-item.monddang-info .title::before {
+.section-service .service-item.monddang-info .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1140px 0;
 }
-.section-main_service .service-item.imagine-seoul .title::before {
+.section-service .service-item.imagine-seoul .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1020px 0;
 }
-.section-main_service .service-item.my-hands-seoul .title::before {
+.section-service .service-item.my-hands-seoul .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -60px 0;
 }
-.section-main_service .service-item.e-book .title::before {
+.section-service .service-item.e-book .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -1080px 0;
 }
-.section-main_service .service-item.city-council .title::before {
+.section-service .service-item.city-council .title::before {
   background: url("../images/icon_set_service_202205.png") no-repeat -600px 0;
 }
 
@@ -961,8 +984,24 @@ button {
   font-size: 16px;
   line-height: 30px;
 }
+.section-complain .complain-item + .bar + .complain-item .desc {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.section-complain .complain-item + .bar + .complain-item .desc::after {
+  content: ">";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #c6d3e0;
+  color: #fff;
+  border-radius: 50%;
+}
 
-.section-board {
+.box3 {
   margin-top: 50px;
   padding-bottom: 40px;
   max-height: 210px;
@@ -972,55 +1011,55 @@ button {
   padding-bottom: 50px;
   border-bottom: 2px solid #222222;
 }
-.section-board .headline {
+.box3 .headline {
   padding-bottom: 10px;
   border-bottom: 2px solid #dbdbdb;
 }
-.section-board .board-news,
-.section-board .board-event {
+.box3 .section-event,
+.box3 .section-festival {
   flex: 1;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.section-board .board-news ul,
-.section-board .board-event ul {
+.box3 .section-event ul,
+.box3 .section-festival ul {
   margin-top: 10px;
 }
-.section-board .board-news ul a,
-.section-board .board-event ul a {
+.box3 .section-event ul a,
+.box3 .section-festival ul a {
   display: flex;
   align-items: center;
   gap: 10px;
   height: 30px;
 }
-.section-board .board-news ul a .category,
-.section-board .board-event ul a .category {
+.box3 .section-event ul a .category,
+.box3 .section-festival ul a .category {
   font-size: 15px;
   font-weight: 300;
 }
-.section-board .board-news ul a .category.economic,
-.section-board .board-event ul a .category.economic {
+.box3 .section-event ul a .category.economic,
+.box3 .section-festival ul a .category.economic {
   color: #069363;
 }
-.section-board .board-news ul a .category.administration,
-.section-board .board-event ul a .category.administration {
+.box3 .section-event ul a .category.administration,
+.box3 .section-festival ul a .category.administration {
   color: #028ab6;
 }
-.section-board .board-news ul a .category.welfare,
-.section-board .board-event ul a .category.welfare {
+.box3 .section-event ul a .category.welfare,
+.box3 .section-festival ul a .category.welfare {
   color: #d76000;
 }
-.section-board .board-news ul a .category.culture,
-.section-board .board-event ul a .category.culture {
+.box3 .section-event ul a .category.culture,
+.box3 .section-festival ul a .category.culture {
   color: #9b64d3;
 }
-.section-board .board-news ul a .category.environment,
-.section-board .board-event ul a .category.environment {
+.box3 .section-event ul a .category.environment,
+.box3 .section-festival ul a .category.environment {
   color: #599100;
 }
-.section-board .board-news ul a .text,
-.section-board .board-event ul a .text {
+.box3 .section-event ul a .text,
+.box3 .section-festival ul a .text {
   display: block;
   font-size: 15px;
   font-weight: 300;
@@ -1029,8 +1068,8 @@ button {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.section-board .board-news .link-more,
-.section-board .board-event .link-more {
+.box3 .section-event .link-more,
+.box3 .section-festival .link-more {
   position: absolute;
   top: 0;
   right: 0;
@@ -1039,23 +1078,23 @@ button {
   align-items: center;
   border: 1px solid #ddd;
 }
-.section-board .board-news .link-more::after,
-.section-board .board-event .link-more::after {
+.box3 .section-event .link-more::after,
+.box3 .section-festival .link-more::after {
   content: "";
   background: url("../images/icon_set_common.png") no-repeat -1px -1px;
   width: 20px;
   height: 18px;
 }
-.section-board .frequently-area {
+.box3 .section-frequently {
   flex: 1;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.section-board .frequently-area .headline {
+.box3 .section-frequently .headline {
   border: none;
 }
-.section-board .frequently-area .service-list {
+.box3 .section-frequently .service-list {
   background: #eff4f8;
   padding: 15px;
   display: flex;
@@ -1065,14 +1104,14 @@ button {
   font-weight: 300;
   box-sizing: border-box;
 }
-.section-board .frequently-area .service-item .title {
+.box3 .section-frequently .service-item .title {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 15px;
   line-height: 26px;
 }
-.section-board .frequently-area .service-item .title:before {
+.box3 .section-frequently .service-item .title:before {
   content: "";
   background: #666666;
   width: 2px;
@@ -1277,50 +1316,50 @@ button {
   padding: 13px 10px;
   font-size: 22px;
 }
-.section-seoul .sns-area .sns-list {
+.section-seoul .sns-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   transform: translateY(80%);
 }
-.section-seoul .sns-area .sns-item a {
+.section-seoul .sns-item a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.section-seoul .sns-area .sns-item a::before {
+.section-seoul .sns-item a::before {
   content: "";
   width: 40px;
   height: 40px;
 }
-.section-seoul .sns-area .sns-item.instagram a::before {
+.section-seoul .sns-item.instagram a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
-.section-seoul .sns-area .sns-item.facebook a::before {
+.section-seoul .sns-item.facebook a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: -40px 0px;
 }
-.section-seoul .sns-area .sns-item.twiter a::before {
+.section-seoul .sns-item.twiter a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: -80px 0px;
 }
-.section-seoul .sns-area .sns-item.blog a::before {
+.section-seoul .sns-item.blog a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: -120px 0px;
 }
-.section-seoul .sns-area .sns-item.youtube a::before {
+.section-seoul .sns-item.youtube a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: -160px 0px;
 }
-.section-seoul .sns-area .sns-item.kakaostory a::before {
+.section-seoul .sns-item.kakaostory a::before {
   background: url("../images/ico_sns_list.png");
   background-repeat: no-repeat;
   background-position: -200px 0px;

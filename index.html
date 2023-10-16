@@ -45,31 +45,42 @@
     </div>
 
     <header class="header">
-      <div class="common-inner">
-        <div class="top-header">
-          <h1 class="logo">
-            <a href="">
-              <span class="blind">서울시청 로고</span>
-            </a>
-          </h1>
-          <nav class="gnb">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="" class="nav">서울소식</a></li>
-              <li class="nav-item"><a href="" class="nav">시민참여</a></li>
-              <li class="nav-item"><a href="" class="nav">분야별정보</a></li>
-              <li class="nav-item"><a href="" class="nav">서울소개</a></li>
-              <li class="nav-item"><a href="" class="nav">부서안내</a></li>
-              <li class="nav-item"><a href="" class="nav">정보공개</a></li>
-              <li class="nav-item"><a href="" class="nav">응답소</a></li>
-            </ul>
-          </nav>
-          <div class="auth-area">
-            <a href="" class="link-login">로그인</a>
-            <a href="" class="link-auth">나의서울</a>
-            <a href="" class="link-auth">전자우편</a>
-          </div>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="">
+            <span class="blind">서울시청 로고</span>
+          </a>
+        </h1>
+        <nav class="gnb">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="link-nav">서울소식</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">시민참여</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">분야별정보</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">서울소개</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">부서안내</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">정보공개</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="link-nav">응답소</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="util-area">
+          <a href="" class="link-login">로그인</a>
+          <a href="" class="link-auth">나의서울</a>
+          <a href="" class="link-auth">전자우편</a>
         </div>
-
       </div>
     </header>
     <main class="container" id="main">
@@ -87,17 +98,15 @@
           <button class="select-lang-btn">GO</button>
         </div>
         <!------------------------------------------------>
-        <section class="section-search_weather">
-          <h2 class="blind">검색 및 기상</h2>
-
-          <a href="" class="slogan">
+        <div class="box1">
+          <a href="" class="slogan-area">
             <span class="blind">서울 슬로건</span>
           </a>
 
           <div class="search-area">
             <form action="" method="post">
               <fieldset>
-                <legend class="blind">검색 폼</legend>
+                <legend class="blind">검색</legend>
                 <label for="search" class="blind">검색어입력</label>
                 <input type="text" class="search-input" placeholder="검색어를 입력해 주세요" id="search">
                 <div class="search-btn-area">
@@ -109,13 +118,24 @@
             </form>
           </div>
 
-          <div class="weather-area">
-            <p class="title">기상특보</p>
-            <p class="status">호우주의보</p>
-            <button class=""></button>
-          </div>
+          <article class="weather-area">
+            <h2 class="blind">날씨</h2>
+            <a href="https://www.weather.go.kr" class="left">
+              <img src="./assets/images/weathericon_d2.png" alt="구름">
+            </a>
+            <div class="right">
+              <a href="https://www.weather.go.kr" class="flex-area">
+                <strong class="temperatures">20.6&#176;C</strong>
+                <span class="status">구름많음</span>
+              </a>
+              <a href="//cleanair.seoul.go.kr/main.htm#tab1_01" class="flex-area">
+                <span>미세먼지 <span class="good">(좋음)</span></span>
+                <span>초미세먼지 <span class="average">(보통)</span></span>
+              </a>
+            </div>
+          </article>
 
-        </section>
+        </div>
         <!------------------------------------------------>
         <div class="grid-area">
 
@@ -228,28 +248,30 @@
             </div>
           </section>
           <!------------------------------------------------>
-          <section class="section-covid_mayor">
-            <h2 class="blind">코로나 소식 및 시청뉴스</h2>
+          <div class="box2">
 
-            <div class="covid19-area">
+            <section class="section-covid19">
+              <h2 class="blind">코로나 소식</h2>
               <span class="title">코로나19</span>
               <span class="confirmed">주간 확진자
                 <span class="count">25,860</span>
                 <button class="all-confirmed-btn">전체보기</button>
               </span>
               <span class="confirmed-period">2023.06.27~07.03</span>
-            </div>
+            </section>
 
-            <div class="mayor-news-area">
+            <section class="section-mayor_news">
+              <h2 class="blind">시장뉴스</h2>
               <a href="">
                 <div class="thumb-box">
                   <img src="./assets/images/mayor-news.jpg" alt="">
                 </div>
                 <p class="text-box">취임 1주년, 경력단절여성들 만나 저출생 해법 모색</p>
               </a>
-            </div>
+            </section>
 
-            <div class="mayor-wish-area">
+            <section class="section-mayor_wish">
+              <h2 class="blind">시장에게 바란다</h2>
               <button class="top-btn">시장에게 바란다 &#62;</button>
               <div class="bottom-btn-area">
                 <button>공약(매니페스토)</button>
@@ -257,11 +279,11 @@
                 <button>투표</button>
                 <button>설문조사</button>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
         <!------------------------------------------------>
-        <section class="section-main_service">
+        <section class="section-service">
           <div class="title-box">
             <h2 class="headline">주요 서비스</h2>
             <a href="" class="link-allNoori">전체누리집</a>
@@ -376,14 +398,14 @@
             <li class="complain-item">
               <a href="">
                 <p class="title">민원발급서비스</p>
-                <p class="desc">사울시온라인민원</p>
+                <p class="desc">서울시온라인민원</p>
               </a>
             </li>
           </ul>
         </section>
         <!-- -------------------------------------------- -->
-        <section class="section-board">
-          <div class="board-news">
+        <div class="box3">
+          <div class="section-event">
             <h2 class="headline">이벤트 신청</h2>
             <ul class="news-list">
               <li class="news-item">
@@ -424,35 +446,35 @@
               <span class="blind">더보기</span>
             </a>
           </div>
-          <div class="board-event">
+          <section class="section-festival">
             <h2 class="headline">이달의 행사 및 축제</h2>
-            <ul class="event-list">
-              <li class="event-item">
+            <ul class="festival-list">
+              <li class="festival-item">
                 <a href="">
                   <span class="category environment">환경</span>
                   <span class="text">2023 월드컵공원, 보라매공원 여름방학 프로그램보라매공원 여름방학 프로그램보라매공원 여름방학 프로그램</span>
                 </a>
               </li>
-              <li class="event-item">
+              <li class="festival-item">
                 <a href="">
                   <span class="category culture">문화</span>
                   <span class="text">2023. 7월 문화달력</span>
                 </a>
               </li>
-              <li class="event-item">
+              <li class="festival-item">
                 <a href="">
                   <span class="category culture">문화</span>
                   <span class="text">서울도시건축전시관, "건축가의 관점들:건축과 가시건축전시관시건축전시관시건축전시관시건축전시관시건축전시관"</span>
                 </a>
               </li>
 
-              <li class="event-item">
+              <li class="festival-item">
                 <a href="">
                   <span class="category culture">문화</span>
                   <span class="text">서울공예박물관 기획전시"나전장의 도안실: 그림으로 관점들:건축과 가시건축전시관시건축전시관시건축전시관시건축전시관시건축전시관"</span>
                 </a>
               </li>
-              <li class="event-item">
+              <li class="festival-item">
                 <a href="">
                   <span class="category environment">환경</span>
                   <span class="text">사계절 문화·예술 축제로 일년 내내 즐거움이 가득한 가시건축전시관시건축전시관시건축전시관시건축전시관시건축전시관"</span>
@@ -462,8 +484,8 @@
             <a href="" class="link-more">
               <span class="blind">더보기</span>
             </a>
-          </div>
-          <div class="frequently-area">
+          </section>
+          <section class="section-frequently">
             <h2 class="headline">자주 찾은 서비스</h2>
             <ul class="service-list">
               <li class="service-item">
@@ -517,8 +539,8 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </section>
+          </section>
+        </div>
         <!-- -------------------------------------------- -->
         <section class="section-field">
           <h2 class="headline">분야별정보</h2>
