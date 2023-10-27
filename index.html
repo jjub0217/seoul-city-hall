@@ -22,11 +22,9 @@
 
 <body>
 
-  <!-- 처음 화면에서 tab 을 하면 #skip-header 영역이 보이고, 엔터를 친 후에 tab 을 누르면 바로 main 쪽으로 넘어간다.: 이렇게 하려면 main 쪽에 id가 #skip-header 의 a 링크의 주소와 일치해야 한다. (웹접근성: header 를 읽고싶지 않을수도 있으니까)-->
   <div id="skip-header">
     <a href="#main">본문내용 바로보기</a>
   </div>
-  <!-- 최소 너비 보장해주는 wrapper -->
   <div class="wrapper">
     <div class="popup">
       <a href="https://festival.seoul.go.kr/garden" class="link-popup">
@@ -43,7 +41,6 @@
         </div>
       </div>
     </div>
-
     <header class="header">
       <div class="inner">
         <h1 class="logo">
@@ -85,7 +82,6 @@
     </header>
     <main class="container" id="main">
       <div class="inner">
-
         <div class="language-area">
           <label for="langList" class="blind">언어선택</label>
           <select class="global-language" id="langList">
@@ -97,12 +93,10 @@
           </select>
           <button class="select-lang-btn">GO</button>
         </div>
-        <!------------------------------------------------>
         <div class="box1">
           <a href="" class="slogan-area">
             <span class="blind">서울 슬로건</span>
           </a>
-
           <div class="search-area">
             <form action="" method="post">
               <fieldset>
@@ -117,7 +111,6 @@
               </fieldset>
             </form>
           </div>
-
           <article class="weather-area">
             <h2 class="blind">날씨</h2>
             <a href="https://www.weather.go.kr" class="left">
@@ -134,21 +127,14 @@
               </a>
             </div>
           </article>
-
         </div>
-        <!------------------------------------------------>
-
-
         <div class="flex-area">
-
           <section class="section-issue">
             <h2 class="blind">서울시 이슈</h2>
-            <!-- 4번째 슬라이드로 넘어가면 버튼이 시민참여로 넘어간다. -->
             <div class="issue-nav">
               <button class="btn-news on" data-idx="0"><span>주요뉴스</span></button>
               <button class="btn-citizen" data-idx="3"><span>시민참여</span></button>
             </div>
-
             <div class="swiper">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -249,9 +235,7 @@
               </div>
             </div>
           </section>
-          <!------------------------------------------------>
           <div class="box2">
-
             <section class="section-covid19">
               <h2 class="title">코로나19</h2>
               <p class="confirmed">
@@ -261,7 +245,6 @@
               </p>
               <span class="date">2023.06.27~07.03</span>
             </section>
-
             <section class="section-administration_news">
               <h2 class="blind">시정뉴스</h2>
               <a href="">
@@ -271,12 +254,10 @@
                 <p class="text-box">취임 1주년, 경력단절여성들 만나 저출생 해법 모색</p>
               </a>
             </section>
-
             <section class="section-mayor_wish">
               <h2 class="title">
                 <a href="">시장에게 바란다 &#62;</a>
               </h2>
-              <!-- <button class="top-btn">시장에게 바란다 &#62;</button> -->
               <div class="wish-nav">
                 <a href="" class="link-wish">공약(매니페스토)</a>
                 <a href="" class="link-wish">정책제안</a>
@@ -285,13 +266,10 @@
               </div>
             </section>
           </div>
-
         </div>
-        <!------------------------------------------------>
         <section class="section-service">
           <div class="group-header">
             <h2 class="headline">주요 서비스</h2>
-
             <div class="link-area">
               <a href="" class="link-story">
                 <span class="blind">스토리서울</span>
@@ -301,9 +279,7 @@
                 <span class="blind">페스티벌서울</span>
               </a>
             </div>
-
           </div>
-
           <div class="list-area">
             <ul class="service-list">
               <li class="service-item public">
@@ -368,13 +344,10 @@
               </li>
             </ul>
           </div>
-
           <a href="" class="link-all">전체누리집</a>
         </section>
       </div>
-      <!------------------------------------------------>
       <section class="section-complain">
-
         <h2 class="blind">상담 및 민원</h2>
         <div class="inner">
           <ul class="complain-list">
@@ -415,7 +388,6 @@
           </ul>
         </div>
       </section>
-      <!-- -------------------------------------------- -->
       <div class="inner">
         <div class="box3">
           <section class="section-event">
@@ -553,7 +525,6 @@
             </ul>
           </section>
         </div>
-        <!-- -------------------------------------------- -->
         <section class="section-field">
           <h2 class="headline">분야별정보</h2>
           <ul class="field-list">
@@ -599,7 +570,6 @@
             </li>
           </ul>
         </section>
-        <!-- -------------------------------------------- -->
         <section class="section-news">
           <h2 class="headline">새소식</h2>
           <ul class="news-list">
@@ -691,7 +661,6 @@
           </ul>
           <a href="" class="link-all">전체보기</a>
         </section>
-        <!-- -------------------------------------------- -->
         <section class="section-seoul">
           <h2 class="blind">서울시미디어</h2>
           <div class="video-area">
@@ -790,7 +759,6 @@
             </ul>
           </div>
         </section>
-        <!-- -------------------------------------------- -->
         <section class="section-notice">
           <h2 class="blind">공지사항 슬라이드</h2>
           <div class="swiper">
@@ -851,9 +819,7 @@
               <button class="bottom-btn btn-next" aria-label="다음슬라이드"></button>
             </div>
           </div>
-
         </section>
-        <!-- -------------------------------------------- -->
         <section class="section-related">
           <h2 class="blind">관련사이트</h2>
           <ul class="related-list">
@@ -1187,12 +1153,10 @@
         </button>
         <img src="./assets/images/btn_top.png" alt>
       </div>
-
     </main>
     <footer class="footer">
       <h2 class="blind">서울시청 푸터</h2>
       <div class="inner">
-
         <div class="link-area">
           <ul class="noori-list">
             <li class="noori-item">
@@ -1247,7 +1211,6 @@
             </li>
           </ul>
         </div>
-
         <div class="address-area">
           <div class="qna-area">
             <div class="group">
@@ -1257,7 +1220,6 @@
             <p>정보를 못 찾으셨나요?<br>
               120 다산콜센터로 물어보세요!</p>
           </div>
-
           <address class="address">
             <p class="addr">
               서울특별시청 04524 서울특별시 중구 세종대로 110 <span>
@@ -1268,8 +1230,6 @@
             </p>
             <small>© Seoul Metropolitan Government all rights reserved</small>
           </address>
-
-
           <a class="link-accessibility">
             <img src="./assets/images/web-accessibility-icon.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
           </a>
