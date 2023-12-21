@@ -7,7 +7,7 @@ $(function () {
    */
   const mainSlide = new Swiper('.section-issue .swiper',{
     autoplay:{
-    delay: 2000,
+      delay: 5000,
     },
     loop: true,
     navigation: {
@@ -15,9 +15,9 @@ $(function () {
       prevEl: ".btn-prev"
     },
     pagination: {
-    el: ".pagination",
-    type: "fraction",
-  },
+      el: ".pagination",
+      type: "fraction",
+    },
   })
 
 
