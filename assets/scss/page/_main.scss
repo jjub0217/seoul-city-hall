@@ -128,7 +128,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 30px;
 
   .slogan-area {
@@ -187,10 +187,15 @@
     }
   }
 
+  .box4 {
+    display: flex;
+    gap: 20px;
+  }
+
   .weather-area {
     width: 270px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
     .title {
       font-size: 14px;
@@ -212,6 +217,7 @@
         display: flex;
         align-items: flex-end;
         gap: 15px;
+        margin-top: 0;
 
         .status {
           font-size: 16px;
@@ -412,11 +418,11 @@
         .btn-autoplay {
           width: 20px;
           height: 20px;
-          background: url("../images/icon_set_common2.png") no-repeat -269px -284px;
+          background: url("../images/icon_set_common2.png") no-repeat -282px -284px;
           cursor: pointer;
 
           &.pause {
-            background: url("../images/icon_set_common2.png") no-repeat -282px -284px;
+            background: url("../images/icon_set_common2.png") no-repeat -269px -284px;
           }
         }
 
@@ -1364,7 +1370,7 @@
     }
 
     .notice-btn-autoplay {
-      background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
+      background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
       width: 20px;
       height: 20px;
       cursor: pointer;
@@ -1375,7 +1381,7 @@
     .pause {
       width: 20px;
       height: 20px;
-      background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
+      background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
       cursor: pointer;
       border: 1px solid #999;
       border-left: none;

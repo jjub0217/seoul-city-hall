@@ -222,7 +222,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   display: flex;
-  gap: 14px;
+  gap: 20px;
 }
 .header .util-area a {
   display: flex;
@@ -230,17 +230,18 @@ button {
   font-size: 14px;
 }
 .header .gnb {
-  padding-left: 70px;
+  padding-left: 63px;
 }
 .header .gnb .nav-list {
   display: flex;
   gap: 20px;
+  font-size: 16px;
+  line-height: 48px;
 }
 .header .gnb .nav-list .link-nav {
   color: #222;
   font-weight: 500;
 }
-
 .footer {
   padding-top: 35px;
 }
@@ -470,7 +471,7 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .box1 .slogan-area {
@@ -523,10 +524,14 @@ button {
   height: 36px;
   background: url("../images/icon_set_common.png") -40px -97px;
 }
+.box1 .box4 {
+  display: flex;
+  gap: 20px;
+}
 .box1 .weather-area {
   width: 270px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .box1 .weather-area .title {
   font-size: 14px;
@@ -545,6 +550,7 @@ button {
   display: flex;
   align-items: flex-end;
   gap: 15px;
+  margin-top: 0;
 }
 .box1 .weather-area .right .flex-area .status {
   font-size: 16px;
@@ -714,11 +720,11 @@ button {
 .flex-area .section-issue .swiper .swiper-control-area .btn-autoplay {
   width: 20px;
   height: 20px;
-  background: url("../images/icon_set_common2.png") no-repeat -269px -284px;
+  background: url("../images/icon_set_common2.png") no-repeat -282px -284px;
   cursor: pointer;
 }
 .flex-area .section-issue .swiper .swiper-control-area .btn-autoplay.pause {
-  background: url("../images/icon_set_common2.png") no-repeat -282px -284px;
+  background: url("../images/icon_set_common2.png") no-repeat -269px -284px;
 }
 .flex-area .section-issue .swiper .swiper-control-area .btn-next {
   background: url("../images/icon_set_common2.png") no-repeat -255px -284px;
@@ -1447,7 +1453,7 @@ button {
   border: 1px solid #999;
 }
 .section-notice .control-area .notice-btn-autoplay {
-  background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
+  background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -1457,7 +1463,7 @@ button {
 .section-notice .control-area .pause {
   width: 20px;
   height: 20px;
-  background: url("../images/icon_set_common2.png") no-repeat -65px -43px;
+  background: url("../images/icon_set_common2.png") no-repeat -100px -43px;
   cursor: pointer;
   border: 1px solid #999;
   border-left: none;

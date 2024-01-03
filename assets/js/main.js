@@ -25,7 +25,7 @@ $(function () {
    * @슬라이드의index가4부터일경우와그게아닐경우디자인변경
    * 
    */
-  mainSlide.on('transitionEnd', function() {
+  mainSlide.on('slideChange', function() {
     if(mainSlide.realIndex >= 3){
       $('.btn-citizen').addClass('on').siblings().removeClass('on')
     }else{
@@ -38,12 +38,16 @@ $(function () {
    * @주요뉴스나시민참여버튼눌렀을경우슬라이드이동및디자인변경
    * 
    */
-  $(".issue-button-area button").click(function(){
+  $(".issue-nav button").click(function(){
+    if($(".btn-autoplay").hasClass("pause")){
+      $(".btn-autoplay").removeClass("pause")
+    }
     // 클릭한 button 에 부여한 attribute 인 data-idx의 값을 활용하자.
     idx = $(this).data('idx')
     // loop 가 되는 슬라이드에서는 slideTo 가 아니라 slideToLoop 를 사용해야 한다. 
     // mainSlide.slideTo(idx, 1000)
     mainSlide.slideToLoop(idx, 1000)
+    mainSlide.autoplay.start()
     $(this).addClass('on').siblings().removeClass('on')
   })
 
