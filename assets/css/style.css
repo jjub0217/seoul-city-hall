@@ -487,6 +487,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
+  margin-left: 100px;
 }
 .box1 .search-area > * {
   width: 100%;

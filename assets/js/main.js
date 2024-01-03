@@ -7,12 +7,14 @@ $(function () {
    */
   const mainSlide = new Swiper('.section-issue .swiper',{
     autoplay:{
-      delay: 5000,
+      delay: 5000, 
+      disableOnInteraction: false
     },
     loop: true,
     navigation: {
       nextEl: ".btn-next",
-      prevEl: ".btn-prev"
+      prevEl: ".btn-prev",
+    
     },
     pagination: {
       el: ".pagination",
