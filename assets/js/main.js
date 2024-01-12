@@ -8,6 +8,7 @@ $(function () {
   const mainSlide = new Swiper('.section-issue .swiper',{
     autoplay:{
       delay: 5000, 
+      // 사용자 상호작용 시 자동재생 해제 여부
       disableOnInteraction: false
     },
     loop: true,
@@ -45,7 +46,7 @@ $(function () {
       $(".btn-autoplay").removeClass("pause")
     }
     // 클릭한 button 에 부여한 attribute 인 data-idx의 값을 활용하자.
-    idx = $(this).data('idx')
+    let idx = $(this).data('idx')
     // loop 가 되는 슬라이드에서는 slideTo 가 아니라 slideToLoop 를 사용해야 한다. 
     // mainSlide.slideTo(idx, 1000)
     mainSlide.slideToLoop(idx, 1000)
@@ -167,8 +168,7 @@ $(function () {
    * 
    */
   $(window).scroll(function(){
-    curr = $(this).scrollTop()
-    console.log(curr);
+    let curr = $(this).scrollTop()
     if( curr >= 21 ){
       $(".fixed-btn").addClass("show")
     }else{
@@ -213,7 +213,4 @@ $(function () {
     type: "fraction",
     },
   })
-
-
-
 })
