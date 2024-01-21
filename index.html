@@ -100,8 +100,9 @@
               <fieldset>
                 <legend class="blind">검색</legend>
                 <label for="search" class="blind">검색어입력</label>
-                <input type="text" class="search-input" placeholder="검색어를 입력해 주세요" id="search">
-                <div class="search-btn-area">
+                <input type="text" class="search-input" placeholder="검색어를 입력해 주세요" id="search" aria-live="assertive"
+                  aria-atomic="false">
+                <div class=" search-btn-area">
                   <button class="keyboard-btn" aria-label="키보드를마우스로클릭">
                   </button>
                   <button class="search-btn" aria-label="검색"></button>
