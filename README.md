@@ -12,12 +12,12 @@
 
 ## 프로젝트 웹표준(W3C의 Markup Validation Service)
 결과 : 0개 <br>
-<img src="https://github.com/jjub0217/beautiful.github.io/assets/62126380/82a6fbf9-00ce-4db9-9e24-5f799b8a3a4b" width=500> <br>
-속성 aria-label은 현재 요소에 레이블을 지정하는 문자열을 정의하는 데 사용되는 속성입니다. <br> 화면에 텍스트 라벨이 보이지 않는 경우에 사용되는데,  W3C 유효성 검사기는 오용 가능성에 대해 경고하기 때문에 나온 웹표준 검사 결과입니다.
+<img src="https://github.com/jjub0217/beautiful.github.io/assets/62126380/e1c0ed0c-a611-4694-824e-66fdc38fceba" width=500> <br>
+
 
 ## 프로젝트 웹접근성
 - Open-WAX 결과 : error 0
-<img src="https://github.com/jjub0217/beautiful.github.io/assets/62126380/55b060fe-de64-4979-a252-22ceb0be6bc4" width=500> <br>
+<img src="https://github.com/jjub0217/beautiful.github.io/assets/62126380/c7c36c3d-c582-4ad2-8fac-3b0d3719a70a" width=500> <br>
 - WAVE 결과: error 0
 <img src="https://github.com/jjub0217/beautiful.github.io/assets/62126380/b23d851c-6853-4359-af60-cf3900bcec81" width=500>
 
